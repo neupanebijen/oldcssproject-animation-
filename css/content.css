@@ -1,0 +1,173 @@
+/*---------------------------------------------------
+##Content
+-------------------------------------------------*/
+/*---------------------------------------------------
+##About
+-------------------------------------------------*/
+.content-box{
+	max-width: 72rem; 
+	margin: 0 auto; 
+	padding: 3rem; 
+	perspective: 600px; 
+}
+
+.about h2{
+	display: block; 
+	margin-top: 4rem;
+	font-size: var(--h5);
+	text-align: center;  
+}
+
+.about-text{
+	margin-bottom: 4rem; 
+}
+
+.about img{
+	width: 160px; 
+	border-radius: 160px; 
+	position: absolute; 
+	left: 50%; 
+	top: -100px; 
+	transform: translateX(-50%);
+	transition: all 0.4s var(--ease-bounce); 
+}
+
+.about img:hover{
+	cursor: pointer; 
+	width: 200px; 
+	height: 200px; 
+	border-radius: 15px; 
+	box-shadow: -4px 4px 20px black;
+	transform: rotateY(35deg) skew(-20deg) rotateZ(-20deg) translateX(-10rem) translateY(-4rem) rotateX(5deg) rotateY(-35deg) rotateZ(20deg) rotateX(-5deg) skew(20deg);
+}
+
+/*---------------------------------------------------
+## Course Section
+-------------------------------------------------*/
+.class-section-grid{
+	display: grid; 
+	grid-template-columns: repeat(4,1fr); 
+	grid-template-rows: repeat(3,300px); 
+	width: 100%;
+	text-shadow: var(--text-shadow-strong); 
+}
+
+.card{
+	width: 100%; 
+	height: 100%; 
+	perspective: 1000px; 
+	overflow: hidden;
+}
+
+.card-inner{
+	width: 100%; 
+	height: 100%; 
+	transition: transform 1s ; 
+	transform-style: preserve-3d; 
+}
+
+.card-face{
+	position: absolute;
+	width: 100%;  
+	height: 100%; 
+	backface-visibility: hidden; 
+	padding: 4rem; 
+}
+
+.card-back{
+	transform: rotateY(180deg);
+}
+
+.card-inner:hover{
+	transform: rotateY(-180deg);
+}
+
+.class-section .sub-section-title{
+	font-size: var(--h6);
+	line-height: var(--h5); 
+}
+
+.section-zero {
+	grid-column: 1/3; 
+	grid-row: 1/3;
+}
+
+.section-zero .card-face {
+	background: var(--bg-gradient-img);
+}
+
+.section-one {
+	grid-row: span 2 ;
+}
+
+.section-one .card-face{
+	background: var(--color-purple-dk);
+}
+
+
+.section-two .card-face{
+	background: var(--color-bg-dk);
+}
+
+
+.section-three .card-face{
+	background: var(--color-blue);
+}
+
+.section-four .card-face{
+	background: var(--color-bg-dk);
+}
+
+
+.section-five .card-face{
+	background:var(--color-blue-dk);
+}
+
+.section-six {
+	grid-column: span 2; 
+	
+}
+
+.section-six .card-face{
+	background: url(https://cdn.pixabay.com/photo/2015/07/11/23/02/plane-841441_960_720.jpg);
+	background-position: center; 
+	background-size: cover;
+}
+
+/*tab size*/
+@media screen and (max-width: 72rem){
+	.class-section-grid{
+		display: grid; 
+		grid-template-columns: repeat(2,1fr);
+		grid-auto-rows: 300px;	
+	}
+	.section-zero{
+
+	}
+}
+
+/*phone size*/
+@media screen and (max-width: 54rem) {
+	.class-section-grid{
+		grid-template-columns: 1fr, 1fr; 
+		grid-auto-rows: 300px;
+	}
+	.section-zero,
+	.section-one{
+		grid-column: span 1; 
+		grid-row: span 1;
+	}
+}
+
+@media screen and (max-width : 40rem) {
+	.class-section-grid {
+		grid-template-columns: 1fr; 
+		grid-template-rows: repeat(7,300px); 
+	}
+
+	.class-section{
+		grid-column: span 1; 
+		grid-row: span 1;
+	}
+
+}

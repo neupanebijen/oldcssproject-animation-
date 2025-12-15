@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Website</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="css/content.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="rpg-awesome/css/rpg-awesome.css" rel="stylesheet" />
+  </head>
+
+  <!-- body -->
+  <body>
+    <input type="checkbox" name="nav" class="nav-check" id="off-canvas" />
+    <label rel="navigation" class="navicon" for="off-canvas"></label>
+
+    <nav class="site-navigation" role="navigation">
+      <h2 class="nav-title">Course Contents</h2>
+
+      <div class="tab">
+        <input type="checkbox" id="chck1" />
+        <label for="chck1" class="tab-label">0: CSS Review</label>
+        <div class="tab-content">
+          <ol>
+            <li>:pseudo-selctors</li>
+            <li>Responsive Design</li>
+            <li>CSS variables</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="checkbox" id="chck2" />
+        <label for="chck2" class="tab-label">1: Typography</label>
+        <div class="tab-content">
+          <ol>
+            <li>Locally hosted font</li>
+            <li>Variable font</li>
+            <li>Text clipping</li>
+            <li>Text transform</li>
+            <li>Responsive Text</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="checkbox" id="chck3" />
+        <label for="chck3" class="tab-label">2: Content</label>
+        <div class="tab-content">
+          <ol>
+            <li>Pure CSS Accordion(tabs)</li>
+            <li>Advanced List styles</li>
+            <li>Off canvas navigation(checkbox)</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="checkbox" id="chck4" />
+        <label for="chck4" class="tab-label">3: Graphics</label>
+        <div class="tab-content">
+          <ol>
+            <li>Background & gradients</li>
+            <li>CSS border images</li>
+            <li>CSS image filters</li>
+            <li>Responsive images</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="checkbox" id="chck5" />
+        <label for="chck5" class="tab-label">4: Layout</label>
+        <div class="tab-content">
+          <ol>
+            <li>CSS Flexox</li>
+            <li>CSS Grid</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="tab">
+        <input type="checkbox" id="chck6" />
+        <label for="chck6" class="tab-label">5: Motion</label>
+        <div class="tab-content">
+          <ol>
+            <li>2D transforms</li>
+            <li>3D transforms(on hover)</li>
+            <li>Animation (on hover)</li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+
+    <!-- site content -->
+
+    <main class="site-main">
+      <!-- Site Header(top bar) -->
+      <header class="top-bar">
+        <div class="left">
+          <p>Learning CSS</p>
+        </div>
+
+        <div class="center">
+          <p>A course by <a href="">Bijen Neupane</a></p>
+        </div>
+
+        <div class="right">
+          <nav
+            class="social-navigation"
+            role="navigation"
+            aria-label="Social Links Menu"
+          >
+            <div class="menu-social-menu-container">
+              <ul id="menu-social-menu" class="social-links-menu">
+                <li id="menu-item-1" class="menu-item menu-item-1">
+                  <a href="https://facebook.com">
+                    <span class="screen-reader-text">Facebook</span>
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+
+                <li id="menu-item-2" class="menu-item menu-item-2">
+                  <a href="https://twitter.com">
+                    <span class="screen-reader-text">Twitter</span>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li id="menu-item-3" class="menu-item menu-item-3">
+                  <a href="https://instagram.com">
+                    <span class="screen-reader-text">Instagram</span>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li id="menu-item-4" class="menu-item menu-item-4">
+                  <a href="https://linkedin.com">
+                    <span class="screen-reader-text">Linkedin</span>
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="site-title">
+            <span>A</span><span>d</span><span>v</span><span>a</span
+            ><span>n</span><span>c</span><span>e</span><span>d</span
+            ><span class="space"> </span><span>C</span><span>S</span
+            ><span>S</span>
+          </h1>
+          <div class="site-under-title">
+            <p class="site-subtitle">
+              Your One-stop Guide to imporving your CSS from intermidiate to
+              advanced
+            </p>
+            <small class="site-host"
+              >Created by <a href="">Bijen Neupane</a> &amp;
+              <a href="">Hosted by </a></small
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+
+      <section class="about">
+        <div class="content-box">
+          <h2 class="sub-section-title">Hi, I'm an Bijen.</h2>
+          <img
+            src="./profile.png"
+            class="profile-pic"
+            alt="Picture of Aaron"
+            width="200"
+          />
+          <p class="about-text">
+            Just look at my face. tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+        </div>
+      </section>
+
+      <!-- Course section -->
+
+      <section class="content course-details">
+        <div class="class-section-grid">
+          <article class="class-section section-zero first-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-aura"></i>
+                    Welcome &amp; Introduction
+                  </h4>
+                  <p>Hover to see the content.</p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">:pseudo-selectors</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-one">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-one"></i>
+                    Typography
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-two first-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-two"></i>
+                    Content
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-three first-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-three"></i>
+                    Graphics
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-four first-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-four"></i>
+                    Layout
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-five first-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-five"></i>
+                    Motion
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="class-section section-six final-chapter">
+            <div class="card">
+              <div class="card-inner">
+                <div class="card-face card-front">
+                  <h4 class="sub-section-title white">
+                    <i class="ra ra-perspective-dice-six"></i>
+                    Welcome &amp; Introduction
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod
+                  </p>
+                </div>
+                <div class="card-face card-back">
+                  <h4 class="sub-section-title white">View Codepens</h4>
+                  <ol>
+                    <li><a href="">Background &amp; gradients</a></li>
+                    <li><a href="">CSS border images</a></li>
+                    <li><a href="">CSS image filter</a></li>
+                    <li><a href="">Responsive images</a></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Site Footer -->
+
+      <footer class="site-footer">
+        <h2 class="sub-section-title">Learning Content</h2>
+        <ul class="codepens learning-content">
+          <li>
+            CSS Review
+            <ol>
+              <li>:pseudo-selctors</li>
+              <li>Responsive Design</li>
+              <li>CSS variables</li>
+            </ol>
+          </li>
+
+          <li>
+            Typography
+            <ol>
+              <li>Locally hosted font</li>
+              <li>Variable font</li>
+              <li>Text clipping</li>
+              <li>Text transform</li>
+              <li>Responsive Text</li>
+            </ol>
+          </li>
+
+          <li>
+            Content
+            <ol>
+              <li>Pure CSS Accordion(tabs)</li>
+              <li>Advanced List styles</li>
+              <li>Off canvas navigation(checkbox)</li>
+            </ol>
+          </li>
+
+          <li>
+            Graphic
+            <ol>
+              <li>Background & gradients</li>
+              <li>CSS border images</li>
+              <li>CSS image filters</li>
+              <li>Responsive images</li>
+            </ol>
+          </li>
+
+          <li>
+            Layout
+            <ol>
+              <li>CSS Flexox</li>
+              <li>CSS Grid</li>
+            </ol>
+          </li>
+
+          <li>
+            Motion
+            <ol>
+              <li>2D transforms</li>
+              <li>3D transforms(on hover)</li>
+              <li>Animation (on hover)</li>
+            </ol>
+          </li>
+        </ul>
+
+        <div class="copyright">&copy; Tera Baap</div>
+      </footer>
+    </main>
+  </body>
+</html>
